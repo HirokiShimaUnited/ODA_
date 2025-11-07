@@ -1,23 +1,23 @@
 📊 ODA–WDI Dashboard
 
-An Integrated Analysis of Official Development Assistance (ODA) and Human Development Outcomes (2000–2023)
+Integrated Analysis of Official Development Assistance (ODA) and Human Development Outcomes (2000–2023)
 
-🌍 Overview
+📘 Overview
 
 This repository presents a reproducible analysis of how education and health sector ODA relate to key human development indicators such as literacy, life expectancy, and infant mortality.
 The study integrates datasets from the OECD Creditor Reporting System (CRS) and the World Bank World Development Indicators (WDI) to examine aid effectiveness and cross-sectoral connections in human development.
 
-The project includes:
+📦 The Project Includes
 
-Cleaned and merged datasets (final_merged_dataset.csv)
+Cleaned and merged datasets: final_merged_dataset.csv
 
-Power BI dashboard (ODA_Analysis(final).pbix)
+Power BI dashboard: ODA_Analysis(final).pbix
 
-Analytical summary (model_summary.json)
+Analytical summary: model_summary.json
 
-Full technical documentation (README_technical.md)
+Full technical documentation: README_technical.md
 
-📁 Repository Structure
+📂 Repository Structure
 ODA_Analysis/
  ├─ data/
  │   ├─ raw/
@@ -29,20 +29,18 @@ ODA_Analysis/
  ├─ reports/
  │   ├─ model_summary.json
  │   ├─ ODA_Analysis(FINAL).pdf
- │   └─ figures/
  ├─ dashboards/
  │   └─ ODA_Analysis(final).pbix
  ├─ code/
- │   ├─ build_panel.ipynb
- │   └─ (future: 00_setup.R, 01_clean_merge.R, 02_model_plots.R)
+ │   └─ build_panel.ipynb
  ├─ README.md
  └─ README_technical.md
 
 📚 Data Sources
 Source	Dataset	Description
-OECD CRS (DAC2A)	Aid disbursements to Education and Health sectors	Constant USD values for comparability
+OECD CRS (DAC2A)	ODA disbursements to Education & Health sectors	Constant USD values for comparability
 World Bank WDI	Literacy, life expectancy, infant mortality, school enrollment	2000–2023 coverage
-World Bank Population & Metadata	Population and income group	Used for ODA per capita and z-score normalization
+World Bank Metadata	Population & Income Group	Used for ODA per capita and z-score normalization
 🧮 Methodology Summary
 
 Merge key: Country + Year
@@ -55,51 +53,49 @@ Derived variables:
 
 ODA per Capita = total ODA ÷ population
 
-Lag variables: Literacy (1–3 years)
+Lag variables (1–3 years)
 
-Z-scores: standardization within income_group × year
+Z-score standardization: within income_group × year
 
-|Z| ≥ 2 → “Notable” Mismatch
+Mismatch flag: |z| ≥ 2 → “Notable”
 
-All processing steps were executed in Python (build_panel.ipynb) and are reproducible in R for full transparency.
+All processing steps are reproducible using the Python notebook (build_panel.ipynb).
+A fully equivalent R/Quarto workflow will be added to ensure academic reproducibility.
 
-📊 Dashboard Highlights
+📈 Dashboard Highlights
 
-The Power BI dashboard visualizes ODA flows and outcomes across six countries:
-Bangladesh, Ethiopia, India, Pakistan, Sudan, and South Sudan (2000–2023).
+The Power BI dashboard visualizes ODA and outcomes for six countries:
+Bangladesh, Ethiopia, India, Pakistan, Sudan, and South Sudan (2000–2023)
 
-Key insights include:
+🔍 Key Insights
 
-Education ODA shows a positive association with literacy (r ≈ +0.65).
+Education ODA shows a positive correlation with literacy (r ≈ +0.65).
 
-Health ODA is moderately correlated with life expectancy (r ≈ +0.58).
+Health ODA correlates moderately with life expectancy (r ≈ +0.58).
 
 Some middle-income countries exhibit mismatches between ODA inflows and progress rates.
 
-Interactive dashboard filters include:
+🧭 Dashboard Filters
 
-Country, Sector, Year Range, Income Group
+Country / Sector / Year Range / Income Group
 
-Lag and Z-score views (Normal vs. Notable mismatch)
+Lag Selection (0–3 years)
 
-🧾 Reproducibility
+Z-score category (Normal / Notable)
 
-All workflows are transparent and reproducible.
+🧾 Reproducibility Workflow
 
-Run build_panel.ipynb in Google Colab or Jupyter.
+Open build_panel.ipynb in Google Colab or Jupyter.
 
-Output:
+Run all cells sequentially:
 
-/data/processed/final_merged_dataset.csv
+Input: /data/raw/*.csv
 
-/reports/model_summary.json
+Output: /data/processed/final_merged_dataset.csv
 
-Visualize results with Power BI using ODA_Analysis(final).pbix.
+Visualize results using Power BI (ODA_Analysis(final).pbix)
 
-For academic reproducibility, R scripts (00_setup.R–02_model_plots.R) and a Quarto report will be added next.
-
-For detailed steps, see README_technical.md
-.
+Review methodology in README_technical.md
 
 ⚠️ Caveats
 
@@ -107,9 +103,9 @@ Data represent disbursements, not commitments.
 
 Correlation ≠ causation.
 
-CRS data availability varies by sector and country.
+CRS data completeness varies by sector and country.
 
-All values converted to constant USD for year-to-year comparability.
+All values converted to constant USD for cross-year comparability.
 
 👤 Author
 
@@ -119,5 +115,11 @@ Independent Researcher | Human Capital & Development Analytics
 
 📘 Citation
 
-Shima, Hiroki (2025). ODA–WDI Dashboard: Integrated analysis of Official Development Assistance and Human Development Indicators (2000–2023).
-GitHub repository: https://github.com/HirokiShimaUnited/ODA
+Shima, Hiroki (2025). ODA–WDI Dashboard: Integrated Analysis of Official Development Assistance and Human Development Indicators (2000–2023).
+GitHub repository: https://github.com/HirokiShimaUnited/ODA_
+
+💡 Next Step (Planned)
+
+Port workflow to R (tidyverse + Quarto) for open academic reproducibility
+
+Publish analytical version on GitHub Pages / Quarto site
