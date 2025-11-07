@@ -1,0 +1,29 @@
+{
+  "rows": 80,
+  "years": [
+    2000,
+    2023
+  ],
+  "countries": 5,
+  "has_cols": [
+    "literacy_rate",
+    "school_enrollment",
+    "infant_mortality",
+    "life_expectancy",
+    "population",
+    "income_group",
+    "disbursements_constant_usd",
+    "ODA per Capita",
+    "Literacy (Lag 1)",
+    "Literacy (Lag 2)",
+    "Literacy (Lag 3)",
+    "Z Literacy",
+    "Z LifeExp",
+    "Z IMR",
+    "Z Enrollment",
+    "Mismatch Flag",
+    "Latest ODA",
+    "Latest Population",
+    "Latest Year"
+  ]
+}

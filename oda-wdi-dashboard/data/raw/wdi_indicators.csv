@@ -1,0 +1,31 @@
+Country Name,Country Code,Series Name,Series Code,2000 [YR2000],2001 [YR2001],2002 [YR2002],2003 [YR2003],2004 [YR2004],2005 [YR2005],2006 [YR2006],2007 [YR2007],2016 [YR2016],2017 [YR2017],2018 [YR2018],2019 [YR2019],2020 [YR2020],2021 [YR2021],2022 [YR2022],2023 [YR2023],2024 [YR2024]
+Pakistan,PAK,"School enrollment, secondary (% gross)",SE.SEC.ENRR,..,..,..,19.91184044,21.90851974,22.81228065,27.56967926,29.47756958,36.35336799,35.85267618,37.74951303,39.616654,..,41.85523453,42.35868532,..,..
+Pakistan,PAK,"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,89.1,87,85,83.4,81.8,80.4,79,77.7,62.2,60.3,58.5,56.8,55.1,53.4,51.8,50.1,..
+Pakistan,PAK,"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,61.903,62.241,62.556,62.834,63.097,62.416,63.624,63.807,65.943,66.223,66.481,66.729,65.701,65.773,67.417,67.649,..
+Pakistan,PAK,"Literacy rate, adult total (% of people ages 15 and above)",SE.ADT.LITR.ZS,..,..,..,..,..,50,54,52,..,59,57,58,..,..,..,..,..
+Sudan,SDN,"School enrollment, secondary (% gross)",SE.SEC.ENRR,..,31.26280022,31.32541084,32.88238907,36.37863159,36.64284897,35.41133881,35.23551178,46.16238022,48.97964096,48.36204147,..,..,..,..,..,..
+Sudan,SDN,"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,70.8,68.9,66.9,65,68.2,66.8,59.9,58.4,47.8,46.5,45.3,44,42.8,41.6,40.3,39.2,..
+Sudan,SDN,"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,58.946,59.264,59.308,58.319,56.773,57.226,60.4,61.442,64.677,65.146,65.501,65.803,65.124,64.46,65.695,66.331,..
+Sudan,SDN,"Literacy rate, adult total (% of people ages 15 and above)",SE.ADT.LITR.ZS,61,..,..,..,..,..,..,..,..,..,60.6971817,..,..,..,..,..,..
+Uganda,UGA,"School enrollment, secondary (% gross)",SE.SEC.ENRR,..,..,..,..,19.02210999,..,..,23.86605072,26.32732894,24.00033467,..,..,..,..,..,..,..
+Uganda,UGA,"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,89.8,85.9,81.4,76.6,71.7,67,62.7,58.7,36.4,34.6,32.9,31.7,30.6,29.5,28.7,27.6,..
+Uganda,UGA,"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,49.64,50.576,51.443,52.414,53.699,54.926,56.118,57.248,64.494,65.174,65.775,66.354,66.41,66.45,67.675,68.252,..
+Uganda,UGA,"Literacy rate, adult total (% of people ages 15 and above)",SE.ADT.LITR.ZS,..,..,68,..,..,..,71,..,69.10131836,..,..,..,..,..,80.58999634,..,..
+Ethiopia,ETH,"School enrollment, secondary (% gross)",SE.SEC.ENRR,13.98243046,16.76921082,18.58958054,19.02877045,21.00012016,23.44086075,27.26987076,30.30982971,..,..,..,..,..,..,..,..,..
+Ethiopia,ETH,"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,92.2,88.7,85.1,81.6,77.9,74.4,70.9,67.7,46,44.2,42.5,41,39.6,38.3,37,35.7,..
+Ethiopia,ETH,"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,50.88,51.428,52.085,52.877,53.735,54.364,55.402,56.566,64.162,64.766,65.257,65.741,65.969,65.33,66.897,67.315,..
+Ethiopia,ETH,"Literacy rate, adult total (% of people ages 15 and above)",SE.ADT.LITR.ZS,..,..,..,..,35.90000153,29.8203392,..,39,47.49158859,51.7711792,..,..,..,..,..,..,..
+Bangladesh,BGD,"School enrollment, secondary (% gross)",SE.SEC.ENRR,48.71913147,50.31414032,51.41809845,51.25708008,47.86413956,46.60287857,47.08378983,47.90071869,66.92324831,64.85595207,67.42136973,67.22091891,69.01357086,70.29333286,71.82198326,71.49470683,..
+Bangladesh,BGD,"Mortality rate, infant (per 1,000 live births)",SP.DYN.IMRT.IN,59.8,56.6,53.6,50.9,48.4,46,43.9,41.9,28.6,27.4,26.3,25.4,24.9,24.5,24.4,24.4,..
+Bangladesh,BGD,"Life expectancy at birth, total (years)",SP.DYN.LE00.IN,62.049,62.836,63.591,64.288,64.912,65.509,66.048,66.458,71.075,71.606,72.122,72.625,71.421,71.103,74.265,74.672,..
+Bangladesh,BGD,"Literacy rate, adult total (% of people ages 15 and above)",SE.ADT.LITR.ZS,..,47,..,..,..,..,..,46.66360092,73,73,74,75,75,76,..,..,..
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
