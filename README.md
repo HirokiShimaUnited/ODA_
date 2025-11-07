@@ -37,9 +37,16 @@ ODA_Analysis/
 
 📚 Data Sources
 Source	Dataset	Description
-OECD CRS (DAC2A)	ODA disbursements to Education & Health sectors	Constant USD values for comparability
-World Bank WDI	Literacy, life expectancy, infant mortality, school enrollment	2000–2023 coverage
+
+OECD Creditor Reporting System (CRS) (DAC2A)	ODA disbursements to Education & Health sectors	Constant USD values for comparability
+https://data-explorer.oecd.org/vis?lcLocale=en&ds=CRS
+
+World Bank World Development Indicators (WDI)	Literacy, life expectancy, infant mortality, school enrollment	2000–2023 coverage
+https://databank.worldbank.org/source/world-development-indicators
+
 World Bank Metadata	Population & Income Group	Used for ODA per capita and z-score normalization
+https://data.worldbank.org/indicator/SP.POP.TOTL
+
 
 🧮 Methodology Summary
 Merge key: Country + Year
