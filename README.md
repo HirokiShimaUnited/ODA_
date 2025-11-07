@@ -18,7 +18,8 @@ Analytical summary: model_summary.json
 Full technical documentation: README_technical.md
 
 <details><summary>📁 Repository Structure (click to expand)</summary>
-```text
+
+ ```text
 ODA_Analysis/
  ├─ data/
  │   ├─ raw/
@@ -35,10 +36,11 @@ ODA_Analysis/
  │   └─ ODA_Analysis(final).pbix
  ├─ code/
  │   ├─ build_panel.ipynb
- │   └─ (future: 00_setup.R, 01_clean_merge.R, 02_model_plots.R)
+ │   └─ 00_setup.R, 01_clean_merge.R, 02_model_plots.R
  ├─ README.md
  └─ README_technical.md
 
+</details> ```
 
 📚 Data Sources
 Source	Dataset	Description
