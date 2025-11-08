@@ -100,5 +100,7 @@ GitHub repository: https://github.com/HirokiShimaUnited/ODA_
 
 💡 Next Step (Planned)
 Port workflow to R (tidyverse + Quarto) for open academic reproducibility
-
 Publish analytical version on GitHub Pages / Quarto site
+
+Implement R/Quarto end-to-end reproducibility. Generate one summary figure (Education ODA vs Literacy with 1–3-year lags and |z|≥2 mismatch flags) and commit the PNG/PDF plus the generating script.
+Re-save the PBIX in Import mode connected to data/processed/final_merged_dataset.csv, and update the README with the figure and one-command run instructions.
