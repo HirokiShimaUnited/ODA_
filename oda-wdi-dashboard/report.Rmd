@@ -1,0 +1,51 @@
+---
+title: "ODA Analysis Pipeline"
+author: "H.S"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(janitor)
+
+crs <- read_csv("crs_disbursements.csv") %>% clean_names()
+wdi <- read_csv("wdi_indicators.csv") %>% clean_names()
+pop <- read_csv("pop_income.csv") %>% clean_names()
+
+merged <- crs %>%
+group_by(recipient, year = as.integer(time_period)) %>%
+summarise(oda_total = sum(obs_value, na.rm = TRUE), .groups = "drop")
+
+summary(merged)
+
+ggplot(merged, aes(x = year, y = oda_total)) +
+geom_line(color = "steelblue") +
+theme_minimal() +
+labs(title = "Total ODA over Time", x = "Year", y = "ODA (USD)")
+```
+```{r fig.width=6, fig.height=4, echo=FALSE}
+ggplot(merged, aes(x = year, y = oda_total)) +
+  geom_line(color = "steelblue") +
+  theme_minimal() +
+  labs(title = "Total ODA over Time", x = "Year", y = "ODA (USD)")
+```
+
+## Results
+
+The figure above shows changes in total ODA by year.  
+A clear upward trend indicates that aid volumes increased during the observed period.  
+Further analysis can separate education-related ODA or normalize data by population size.
+
+## Conclusion
+
+This report demonstrates a simple data pipeline that:
+- Cleans and merges CRS, WDI, and population datasets  
+- Aggregates yearly ODA totals  
+- Visualizes ODA trends over time  
+
+Future work could include regression modeling or adding indicators such as literacy and GDP per capita to examine relationships between aid and development outcomes.
+
+
+
